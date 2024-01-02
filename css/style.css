@@ -1,0 +1,98 @@
+/* Typography and Basic Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #eeeeee; /* Light text for dark backgrounds */
+    background-color: #1a1a1a; /* Dark background */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #4dd0e1; /* Neon blue for links */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4081; /* Vibrant pink for hover */
+}
+
+/* Header */
+header {
+    background-color: #212121;
+    color: white;
+    padding: 0.5em 1em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    max-width: 60px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: auto; /* Pushes all nav items to the right */
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+}
+
+nav a {
+    color: white; /* White for nav links */
+    margin-left: 20px;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for both color and background */
+}
+
+nav a:hover {
+    background-color: #ff5722; /* Bright orange for hover background */
+    color: white; /* Keeping the text white for readability */
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50; /* Dark, rich background color */
+    color: #ecf0f1;
+    padding: 30px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    border-top: 3px solid #3498db; /* Subtle top border */
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.footer-heading {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #3498db; /* Highlight color */
+}
+
+footer p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+footer a {
+    color: #f39c12; /* Bright link color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile-First Approach for Intro Section */
+.intro-section .full-intro {
+    display: none; /* Hide full text on smaller screens by default */
+}

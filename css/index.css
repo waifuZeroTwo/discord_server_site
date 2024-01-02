@@ -1,0 +1,256 @@
+/* Hero Section */
+.hero-section {
+    background: url('path/to/your/banner.png') no-repeat center center;
+    background-size: cover;
+    padding: 4em 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: auto;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent layer for readability */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Initial shadow for depth */
+}
+
+.hero-content:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Increased shadow for 'pop out' effect */
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.hero-content button {
+    background-color: #ff4081; /* Vibrant button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #f50057;
+}
+
+/* Introduction Section */
+.intro-section {
+    background-color: #1a1a1d; /* Dark background for depth */
+    color: #ffffff; /* White text for contrast */
+    padding: 3em 0;
+    text-align: center;
+}
+
+.intro-section .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.intro-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #ff4081; /* Accent color */
+}
+
+.intro-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    text-align: justify; /* For a more narrative feel */
+}
+/* Introduction Section */
+.intro-section .intro-preview button {
+    background-color: #ff4081; /* Vibrant button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1em;
+}
+
+.intro-section .intro-preview button:hover {
+    background-color: #f50057;
+}
+.featured-content {
+    background-color: #2a2a2d; /* Dark background for contrast */
+    color: #ffffff;
+    padding: 3em 0;
+    text-align: center;
+}
+
+.featured-content .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1em;
+}
+
+.featured-content h2 {
+    margin-bottom: 2em;
+    color: #ff4081; /* Accent color */
+}
+
+/* Grid Layout for Content Items */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+}
+
+.content-item {
+    background-color: #333; /* Slightly lighter item background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Pop-out effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-item:hover {
+    transform: translateY(-10px); /* Raised effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.content-item h3 {
+    color: #4dd0e1; /* Bright title color */
+}
+/* Styling for Content Link */
+.content-link {
+    color: inherit; /* Ensures text color is inherited from the parent */
+    text-decoration: none; /* Removes underline from the link */
+    display: block; /* Makes the entire area of the link clickable */
+}
+
+.content-item:hover .content-link {
+    color: inherit; /* Optional: Change link color on hover, if desired */
+}
+/* Overlay Content */
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px; /* Adjust as needed */
+    padding: 20px;
+    border-radius: 8px;
+    background: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+/* Github Button */
+.github-btn {
+    display: inline-block;
+    background-color: #333; /* GitHub dark grey */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.github-btn:hover {
+    background-color: #6cc644; /* GitHub green for hover */
+}
+
+/* Header Content */
+.header-content {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #263238; /* Dark background for contrast */
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.header-content .additional-info p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.header-content button {
+    background-color: #ff4081; /* Vibrant button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header-content button:hover {
+    background-color: #f50057; /* Darker shade on hover */
+}
+/* Styles for smaller screens (default) */
+.intro-section .intro-preview button {
+    display: block; /* Show the button on smaller screens */
+}
+
+.intro-section .full-intro {
+    display: none; /* Hide the full text initially on smaller screens */
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+    .intro-section .intro-preview button {
+        display: none; /* Hide the button on larger screens */
+    }
+
+    .intro-section .full-intro {
+        display: block; /* Ensure the full text is displayed on larger screens */
+    }
+}
